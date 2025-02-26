@@ -4,7 +4,7 @@ body{
 
 .container {
   max-width: 500px; 
-  min-height: 600px; 
+  min-height: 500px; 
   margin: 50px auto;
   padding: 30px;
   background-color: #f8f9fa;
@@ -91,10 +91,9 @@ h3 {
   margin-top: 20px;
 }
 
-/* 📱 RESPONSIVE DESIGN */
 @media (max-width: 768px) {
   .container {
-    width: 95%; /* Full width on small screens */
+    width: 95%; 
     padding: 20px;
   }
 
