@@ -1,7 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom/client"; // Use createRoot
-import ExpenseTracker from "./App"; // Import App component
-import "./App.css"; // Import CSS file
+import ReactDOM from "react-dom/client";
+import ExpenseTracker from "./App";
+import "./App.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

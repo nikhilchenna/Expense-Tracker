@@ -1,17 +1,11 @@
 import { useState } from "react";
-import "./App.css"; // Import CSS
-
-/* 
-  Expense Tracker - Developed by Nikhil C 
-  Technologies: React, HTML, CSS
-*/
+import "./App.css";
 
 export default function ExpenseTracker() {
   const [expenses, setExpenses] = useState([]);
   const [name, setName] = useState("");
   const [amount, setAmount] = useState("");
 
-  // Function to add an expense
   const addExpense = () => {
     if (name && amount) {
       setExpenses([...expenses, { id: Date.now(), name, amount: parseFloat(amount) }]);
@@ -20,12 +14,10 @@ export default function ExpenseTracker() {
     }
   };
 
-  // Function to delete an expense
   const deleteExpense = (id) => {
     setExpenses(expenses.filter((expense) => expense.id !== id));
   };
 
-  // Format amount in Indian Rupees
   const formatCurrency = (value) => {
     return new Intl.NumberFormat("en-IN", {
       style: "currency",
